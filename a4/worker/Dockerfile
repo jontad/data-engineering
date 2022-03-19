@@ -16,4 +16,4 @@ ENV SPARK_NO_DAEMONIZE="true"
 
 RUN sleep 15
 
-CMD $SPARK_HOME/sbin/start-worker.sh spark://sparkmaster:7077 ;
+CMD $SPARK_HOME/sbin/start-worker.sh spark://$MASTER ;
